@@ -8,14 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		7DE710AB283E30AB00F8913A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710AA283E30AB00F8913A /* AppDelegate.swift */; };
-		7DE710AD283E30AB00F8913A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710AC283E30AB00F8913A /* SceneDelegate.swift */; };
-		7DE710AF283E30AB00F8913A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710AE283E30AB00F8913A /* ViewController.swift */; };
+		7DE710AF283E30AB00F8913A /* MatrixTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710AE283E30AB00F8913A /* MatrixTableViewController.swift */; };
 		7DE710B2283E30AB00F8913A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE710B0283E30AB00F8913A /* Main.storyboard */; };
 		7DE710B4283E30AD00F8913A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE710B3283E30AD00F8913A /* Assets.xcassets */; };
 		7DE710B7283E30AD00F8913A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE710B5283E30AD00F8913A /* LaunchScreen.storyboard */; };
 		7DE710C2283E30AD00F8913A /* MatrixTableViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710C1283E30AD00F8913A /* MatrixTableViewTestTests.swift */; };
 		7DE710CC283E30AE00F8913A /* MatrixTableViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710CB283E30AE00F8913A /* MatrixTableViewTestUITests.swift */; };
 		7DE710CE283E30AE00F8913A /* MatrixTableViewTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710CD283E30AE00F8913A /* MatrixTableViewTestUITestsLaunchTests.swift */; };
+		7DE710DC283E30F600F8913A /* MatrixRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710DB283E30F600F8913A /* MatrixRowCell.swift */; };
+		7DE710E928455CA300F8913A /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7DE710E828455CA300F8913A /* data.json */; };
+		7DE710EC28455CD300F8913A /* FakeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710EB28455CD300F8913A /* FakeAPI.swift */; };
+		7DE710EE284576CC00F8913A /* MatrixButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710ED284576CC00F8913A /* MatrixButton.swift */; };
+		7DE710F028462B7700F8913A /* StackView+RemoveSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710EF28462B7700F8913A /* StackView+RemoveSubviews.swift */; };
+		7DE710F228463A8300F8913A /* UILabel+TextInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710F128463A8300F8913A /* UILabel+TextInset.swift */; };
+		7DE710F428464AEB00F8913A /* UIView+RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE710F328464AEB00F8913A /* UIView+RoundCorners.swift */; };
+		82B6C17C6B7D2A201BFA8763 /* Pods_MatrixTableViewTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F83A9CF09066F5CB53FDA13 /* Pods_MatrixTableViewTestTests.framework */; };
+		9CF99CB126B729FF71E1BBA2 /* Pods_MatrixTableViewTest_MatrixTableViewTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C238DD443002C4EEB6124FB5 /* Pods_MatrixTableViewTest_MatrixTableViewTestUITests.framework */; };
+		DD62AB977D5B1665933851B1 /* Pods_MatrixTableViewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840AE9AED20CA1320E221487 /* Pods_MatrixTableViewTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F83A9CF09066F5CB53FDA13 /* Pods_MatrixTableViewTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatrixTableViewTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A1251F91A7E9CA50C2B2D5 /* Pods-MatrixTableViewTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixTableViewTestTests.release.xcconfig"; path = "Target Support Files/Pods-MatrixTableViewTestTests/Pods-MatrixTableViewTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		5285C32AF14F68730D6255A5 /* Pods-MatrixTableViewTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixTableViewTestTests.debug.xcconfig"; path = "Target Support Files/Pods-MatrixTableViewTestTests/Pods-MatrixTableViewTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DE710A7283E30AB00F8913A /* MatrixTableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixTableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE710AA283E30AB00F8913A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DE710AC283E30AB00F8913A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7DE710AE283E30AB00F8913A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DE710AE283E30AB00F8913A /* MatrixTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTableViewController.swift; sourceTree = "<group>"; };
 		7DE710B1283E30AB00F8913A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DE710B3283E30AD00F8913A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DE710B6283E30AD00F8913A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,19 @@
 		7DE710C7283E30AE00F8913A /* MatrixTableViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixTableViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE710CB283E30AE00F8913A /* MatrixTableViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTableViewTestUITests.swift; sourceTree = "<group>"; };
 		7DE710CD283E30AE00F8913A /* MatrixTableViewTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTableViewTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DE710DB283E30F600F8913A /* MatrixRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixRowCell.swift; sourceTree = "<group>"; };
+		7DE710E828455CA300F8913A /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		7DE710EB28455CD300F8913A /* FakeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAPI.swift; sourceTree = "<group>"; };
+		7DE710ED284576CC00F8913A /* MatrixButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixButton.swift; sourceTree = "<group>"; };
+		7DE710EF28462B7700F8913A /* StackView+RemoveSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+RemoveSubviews.swift"; sourceTree = "<group>"; };
+		7DE710F128463A8300F8913A /* UILabel+TextInset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+TextInset.swift"; sourceTree = "<group>"; };
+		7DE710F328464AEB00F8913A /* UIView+RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorners.swift"; sourceTree = "<group>"; };
+		840AE9AED20CA1320E221487 /* Pods_MatrixTableViewTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatrixTableViewTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A196AF938FA4D431FDCE36DD /* Pods-MatrixTableViewTest-MatrixTableViewTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixTableViewTest-MatrixTableViewTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-MatrixTableViewTest-MatrixTableViewTestUITests/Pods-MatrixTableViewTest-MatrixTableViewTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2C2702F6412E67705EBE32B /* Pods-MatrixTableViewTest-MatrixTableViewTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixTableViewTest-MatrixTableViewTestUITests.release.xcconfig"; path = "Target Support Files/Pods-MatrixTableViewTest-MatrixTableViewTestUITests/Pods-MatrixTableViewTest-MatrixTableViewTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B7ED2B660A223219034D3EE6 /* Pods-MatrixTableViewTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixTableViewTest.debug.xcconfig"; path = "Target Support Files/Pods-MatrixTableViewTest/Pods-MatrixTableViewTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C238DD443002C4EEB6124FB5 /* Pods_MatrixTableViewTest_MatrixTableViewTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatrixTableViewTest_MatrixTableViewTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12957B8BB471B1BF48C2E82 /* Pods-MatrixTableViewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixTableViewTest.release.xcconfig"; path = "Target Support Files/Pods-MatrixTableViewTest/Pods-MatrixTableViewTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD62AB977D5B1665933851B1 /* Pods_MatrixTableViewTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B6C17C6B7D2A201BFA8763 /* Pods_MatrixTableViewTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF99CB126B729FF71E1BBA2 /* Pods_MatrixTableViewTest_MatrixTableViewTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59D41040A9BE2495432AA2A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				840AE9AED20CA1320E221487 /* Pods_MatrixTableViewTest.framework */,
+				C238DD443002C4EEB6124FB5 /* Pods_MatrixTableViewTest_MatrixTableViewTestUITests.framework */,
+				1F83A9CF09066F5CB53FDA13 /* Pods_MatrixTableViewTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DE7109E283E30AB00F8913A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +120,8 @@
 				7DE710C0283E30AD00F8913A /* MatrixTableViewTestTests */,
 				7DE710CA283E30AE00F8913A /* MatrixTableViewTestUITests */,
 				7DE710A8283E30AB00F8913A /* Products */,
+				C14EBE3E696FB50714540D74 /* Pods */,
+				59D41040A9BE2495432AA2A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +138,12 @@
 		7DE710A9283E30AB00F8913A /* MatrixTableViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				7DE710AE283E30AB00F8913A /* MatrixTableViewController.swift */,
+				7DE710EA28455CC300F8913A /* DataProvider */,
+				7DE710E728455C6900F8913A /* Views */,
+				7DE710DA283E30CA00F8913A /* Cells */,
+				7DE710F628464B0500F8913A /* Helpers */,
 				7DE710AA283E30AB00F8913A /* AppDelegate.swift */,
-				7DE710AC283E30AB00F8913A /* SceneDelegate.swift */,
-				7DE710AE283E30AB00F8913A /* ViewController.swift */,
 				7DE710B0283E30AB00F8913A /* Main.storyboard */,
 				7DE710B3283E30AD00F8913A /* Assets.xcassets */,
 				7DE710B5283E30AD00F8913A /* LaunchScreen.storyboard */,
@@ -127,6 +169,54 @@
 			path = MatrixTableViewTestUITests;
 			sourceTree = "<group>";
 		};
+		7DE710DA283E30CA00F8913A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7DE710DB283E30F600F8913A /* MatrixRowCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7DE710E728455C6900F8913A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DE710ED284576CC00F8913A /* MatrixButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7DE710EA28455CC300F8913A /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				7DE710EB28455CD300F8913A /* FakeAPI.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		7DE710F628464B0500F8913A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7DE710EF28462B7700F8913A /* StackView+RemoveSubviews.swift */,
+				7DE710F128463A8300F8913A /* UILabel+TextInset.swift */,
+				7DE710F328464AEB00F8913A /* UIView+RoundCorners.swift */,
+				7DE710E828455CA300F8913A /* data.json */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C14EBE3E696FB50714540D74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7ED2B660A223219034D3EE6 /* Pods-MatrixTableViewTest.debug.xcconfig */,
+				E12957B8BB471B1BF48C2E82 /* Pods-MatrixTableViewTest.release.xcconfig */,
+				A196AF938FA4D431FDCE36DD /* Pods-MatrixTableViewTest-MatrixTableViewTestUITests.debug.xcconfig */,
+				A2C2702F6412E67705EBE32B /* Pods-MatrixTableViewTest-MatrixTableViewTestUITests.release.xcconfig */,
+				5285C32AF14F68730D6255A5 /* Pods-MatrixTableViewTestTests.debug.xcconfig */,
+				24A1251F91A7E9CA50C2B2D5 /* Pods-MatrixTableViewTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DE710D1283E30AE00F8913A /* Build configuration list for PBXNativeTarget "MatrixTableViewTest" */;
 			buildPhases = (
+				518CA878316CB3A7B61CA07D /* [CP] Check Pods Manifest.lock */,
 				7DE710A3283E30AB00F8913A /* Sources */,
 				7DE710A4283E30AB00F8913A /* Frameworks */,
 				7DE710A5283E30AB00F8913A /* Resources */,
+				781AF5ECEF78EC4ACF410F5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DE710D4283E30AE00F8913A /* Build configuration list for PBXNativeTarget "MatrixTableViewTestTests" */;
 			buildPhases = (
+				EDF172D0A58DA079BD7EBB8B /* [CP] Check Pods Manifest.lock */,
 				7DE710B9283E30AD00F8913A /* Sources */,
 				7DE710BA283E30AD00F8913A /* Frameworks */,
 				7DE710BB283E30AD00F8913A /* Resources */,
@@ -169,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DE710D7283E30AE00F8913A /* Build configuration list for PBXNativeTarget "MatrixTableViewTestUITests" */;
 			buildPhases = (
+				460F58384219485893FFFEEE /* [CP] Check Pods Manifest.lock */,
 				7DE710C3283E30AE00F8913A /* Sources */,
 				7DE710C4283E30AE00F8913A /* Frameworks */,
 				7DE710C5283E30AE00F8913A /* Resources */,
+				B1C697197CD19E3C3DFF2D21 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +329,7 @@
 				7DE710B7283E30AD00F8913A /* LaunchScreen.storyboard in Resources */,
 				7DE710B4283E30AD00F8913A /* Assets.xcassets in Resources */,
 				7DE710B2283E30AB00F8913A /* Main.storyboard in Resources */,
+				7DE710E928455CA300F8913A /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +349,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		460F58384219485893FFFEEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatrixTableViewTest-MatrixTableViewTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		518CA878316CB3A7B61CA07D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatrixTableViewTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		781AF5ECEF78EC4ACF410F5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatrixTableViewTest/Pods-MatrixTableViewTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatrixTableViewTest/Pods-MatrixTableViewTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MatrixTableViewTest/Pods-MatrixTableViewTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1C697197CD19E3C3DFF2D21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatrixTableViewTest-MatrixTableViewTestUITests/Pods-MatrixTableViewTest-MatrixTableViewTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MatrixTableViewTest-MatrixTableViewTestUITests/Pods-MatrixTableViewTest-MatrixTableViewTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MatrixTableViewTest-MatrixTableViewTestUITests/Pods-MatrixTableViewTest-MatrixTableViewTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF172D0A58DA079BD7EBB8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatrixTableViewTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7DE710A3283E30AB00F8913A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE710AF283E30AB00F8913A /* ViewController.swift in Sources */,
+				7DE710EC28455CD300F8913A /* FakeAPI.swift in Sources */,
+				7DE710F028462B7700F8913A /* StackView+RemoveSubviews.swift in Sources */,
+				7DE710F228463A8300F8913A /* UILabel+TextInset.swift in Sources */,
+				7DE710AF283E30AB00F8913A /* MatrixTableViewController.swift in Sources */,
+				7DE710F428464AEB00F8913A /* UIView+RoundCorners.swift in Sources */,
 				7DE710AB283E30AB00F8913A /* AppDelegate.swift in Sources */,
-				7DE710AD283E30AB00F8913A /* SceneDelegate.swift in Sources */,
+				7DE710DC283E30F600F8913A /* MatrixRowCell.swift in Sources */,
+				7DE710EE284576CC00F8913A /* MatrixButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +636,7 @@
 		};
 		7DE710D2283E30AE00F8913A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7ED2B660A223219034D3EE6 /* Pods-MatrixTableViewTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +664,7 @@
 		};
 		7DE710D3283E30AE00F8913A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12957B8BB471B1BF48C2E82 /* Pods-MatrixTableViewTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +692,7 @@
 		};
 		7DE710D5283E30AE00F8913A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5285C32AF14F68730D6255A5 /* Pods-MatrixTableViewTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +712,7 @@
 		};
 		7DE710D6283E30AE00F8913A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A1251F91A7E9CA50C2B2D5 /* Pods-MatrixTableViewTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +732,7 @@
 		};
 		7DE710D8283E30AE00F8913A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A196AF938FA4D431FDCE36DD /* Pods-MatrixTableViewTest-MatrixTableViewTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +750,7 @@
 		};
 		7DE710D9283E30AE00F8913A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C2702F6412E67705EBE32B /* Pods-MatrixTableViewTest-MatrixTableViewTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

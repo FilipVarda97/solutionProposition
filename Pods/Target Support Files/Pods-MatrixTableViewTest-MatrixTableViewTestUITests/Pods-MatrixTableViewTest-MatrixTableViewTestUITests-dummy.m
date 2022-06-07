@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_MatrixTableViewTest_MatrixTableViewTestUITests : NSObject
+@end
+@implementation PodsDummy_Pods_MatrixTableViewTest_MatrixTableViewTestUITests
+@end
